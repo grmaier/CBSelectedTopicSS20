@@ -19,7 +19,7 @@ last_descendant (const quadrant_t * q, quadrant_t * last_descendant,
     return;
   }
 #endif
-  if ((int) q->level > level && level >= MAXLEVEL) {
+  if ((int) q->level > level || level >= MAXLEVEL) {
     printf
       ("last_descendant: level should lie between quadrant level (included) \
         and MAXLEVEL (excluded).\n");
