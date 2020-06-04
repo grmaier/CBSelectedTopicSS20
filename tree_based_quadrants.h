@@ -36,7 +36,8 @@ void                child (const quadrant_t * q, quadrant_t * child_quadrant,
                            int child_id);
 
 /** Write in the quadrant \a q the coordinates of the root quadrants.
- * \param [out]  q      Quadrant that coordinates will be set to coordinates.
+ * \param [out]  q      Quadrant that coordinates will be set to coordinates
+ *                      of the root quadrant.
  */
 void                root (quadrant_t * q);
 
@@ -58,6 +59,6 @@ void                first_descendant (const quadrant_t * q,
  * \param [in]  level  Level must be greater equal than q's level.
  */
 void                last_descendant (const quadrant_t * q,
-                                     quadrant_t * last_descendant, int level);
+                                     quadrant_t * ld, int level);
 
 #endif /* !TREE_BASED_QUADRANTS_H */
